@@ -1,5 +1,5 @@
 //var sortTestCase = require('./sort.testcase.js');
-//var heapSort = require('../../src/sorting/heapsort.js').heapSort;
+var heapSort = require('../../src/sorting/heapsort.js');
 
 //sortTestCase(heapSort, 'Heap sort');
 
@@ -17,3 +17,6 @@ for(var i = 0; i < MAX; ++i){
 }
 print(arr);
 
+
+
+heapSort(arr);
