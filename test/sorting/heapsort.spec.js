@@ -1,26 +1,3 @@
-//var sortTestCase = require('./sort.testcase.js');
-//var heapSort = require('../../src/sorting/heapsort.js');
-
-//sortTestCase(heapSort, 'Heap sort');
-
-
-
-
-//load('heapsort.js');
-
-//var arr = [];
-//var MAX = 100
-
-//for(var i = 0; i < MAX; ++i){
-//		arr[i] = Math.floor((Math.random() * 100) + 1);
-	//	print(arr[i]);	
-//}
-//print(arr);
-
-
-
-//heapSort(arr);
-
 
 var arr = [];
 var MAX = 100;
@@ -33,8 +10,28 @@ for(var i = 0; i < MAX; ++i){
       arr[i] = Math.floor((Math.random() * 100) + 1);
     //  print(arr[i]);
 }
-console.log(arr);
-sort(arr);
-console.log(arr);
 
+function dispArr(arr) {
+	for (var i = 0; i < arr.length; ++i) {
+		process.stdout.write(arr[i] + " ");
+		if (i % 10 == 9) {
+			process.stdout.write("\n");
+		}
+	}
+	if (i % 10 != 0) {
+		process.stdout.write("\n");
+	}
+}
+
+
+
+
+
+
+//console.log(arr);
+dispArr(arr);
+sort(arr);
+console.log("");
+//console.log(arr);
+dispArr(arr);
 
