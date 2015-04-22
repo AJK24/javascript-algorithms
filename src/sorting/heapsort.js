@@ -18,6 +18,8 @@
      * @param {function} cmp Comparison function.
      */
     function heapify(array, index, heapSize, cmp) {
+console.log("heapifying"); 
+       
       var left = 2 * index + 1;
       var right = 2 * index + 2;
       var largest = index;
@@ -36,6 +38,10 @@
         array[largest] = temp;
         heapify(array, largest, heapSize, cmp);
       }
+
+console.log(array);
+
+
     }
 
     /**
@@ -50,6 +56,7 @@
       for (var i = Math.floor(array.length / 2); i >= 0; i -= 1) {
         heapify(array, i, array.length, cmp);
       }
+
       return array;
     }
 
@@ -84,6 +91,7 @@
         size -= 1;
         heapify(array, 0, size, cmp);
       }
+console.log(array);
       return array;
     };
   }());
@@ -91,3 +99,9 @@
   exports.heapSort = heapSort;
 
 })(typeof window === 'undefined' ? module.exports : window);
+
+
+
+
+
+
