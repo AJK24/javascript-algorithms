@@ -3,13 +3,16 @@ var arr = [];
 var MAX = 100;
 
 var sort = require('./../../src/sorting/heapsort.js').heapSort;
-console.log(sort([2, 5, 1, 0, 4])); // [ 0, 1, 2, 4, 5 ]
+//console.log(sort([2, 5, 1, 0, 4])); // [ 0, 1, 2, 4, 5 ]
 
 
-for(var i = 0; i < MAX; ++i){
-      arr[i] = Math.floor((Math.random() * 100) + 1);
+//for(var i = 0; i < MAX; ++i){
+  //    arr[i] = Math.floor((Math.random() * 100) + 1);
     //  print(arr[i]);
-}
+//}
+
+var array = [40,7,41,13,19,92,51,31];
+
 
 function dispArr(arr) {
 	for (var i = 0; i < arr.length; ++i) {
@@ -29,9 +32,9 @@ function dispArr(arr) {
 
 
 //console.log(arr);
-dispArr(arr);
-sort(arr);
+dispArr(array);
+sort(array);	//added print statements to it for testing
 console.log("");
 //console.log(arr);
-dispArr(arr);
+dispArr(array);
 
