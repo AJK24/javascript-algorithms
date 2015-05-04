@@ -18,7 +18,7 @@
      * @param {function} cmp Comparison function.
      */
     function heapify(array, index, heapSize, cmp) {
-console.log("heapifying"); 
+//console.log("heapifying"); 
        
       var left = 2 * index + 1;
       var right = 2 * index + 2;
@@ -39,7 +39,7 @@ console.log("heapifying");
         heapify(array, largest, heapSize, cmp);
       }
 
-console.log(array);
+//console.log(array);
 
 
     }
@@ -55,6 +55,7 @@ console.log(array);
     function buildMaxHeap(array, cmp) {
       for (var i = Math.floor(array.length / 2); i >= 0; i -= 1) {
         heapify(array, i, array.length, cmp);
+console.log(array);
       }
 
       return array;
@@ -91,7 +92,7 @@ console.log(array);
         size -= 1;
         heapify(array, 0, size, cmp);
       }
-console.log(array);
+//console.log(array);
       return array;
     };
   }());
