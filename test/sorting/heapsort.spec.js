@@ -35,6 +35,7 @@ function dispArr(arr) {
 
 //console.log(arr);
 dispArr(arr);
+//ADDED anonymous function so now it will be sorted backwards
 sort(arr, (function(a,b){
 	return b - a;
 }));

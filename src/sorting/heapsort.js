@@ -55,6 +55,8 @@
     function buildMaxHeap(array, cmp) {
       for (var i = Math.floor(array.length / 2); i >= 0; i -= 1) {
         heapify(array, i, array.length, cmp);
+
+//BUILD MAX HEAP IS WHERE IT BUILDS THE HEAP BUT NOTHING ELSE!
 console.log(array);
       }
 
